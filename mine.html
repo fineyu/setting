@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mine.css">
+</head>
+<body>
+    <div class="top_back">
+        <div class="header">
+            <span>我的</span>
+            <a href="setting.html"><img src="img/set.png" alt=""></a>
+        </div>
+    </div>
+    <div class="mine_tit">
+        <div class="mine_head">
+            <img src="img/header.png" alt="">
+        </div>
+        <p class="mine_name">肥小八</p>
+        <span>这个家伙很懒，什么也没有留下</span>
+    </div>
+    <div class="mine_order">
+        <div class="order_tit">
+            <div class="tit_left">
+                <img src="img/myorder.png" alt="">
+                <span>我的订单</span>
+            </div>
+            <div class="tit_right">
+                <span>全部订单</span>
+                <a href=""><img src="img/fanhui.png" alt=""></a>
+            </div>
+        </div>
+        <div class="state">
+            <a href="" class="state_details">
+                <img src="img/daifukuan@2x.png" alt="">
+                <em><i>3</i></em>
+                <p>待付款</p>
+            </a>
+            <a href="" class="state_details">
+                <img src="img/daifahuo@2x.png" alt="">
+                <em><i>40</i></em>
+                <p>代发货</p>
+            </a>
+            <a href="" class="state_details">
+                <img src="img/daishouhuo@2x.png" alt="">
+                <em><i>300</i></em>
+                <p>待收货</p>
+            </a>
+            <a href="" class="state_details">
+                <img src="img/daipingjia@2x.png" alt="">
+                <em><i>3</i></em>
+                <p>待评价</p>
+            </a>
+            <a href="" class="state_details">
+                <img src="img/shouhou@2x.png" alt="">
+                <em><i>30</i></em>
+                <p>售后</p>
+            </a>
+        </div>
+        <div class="coupon">
+            <div class="coupon_left">
+                <img src="img/youhuiquan@2x.png" alt="">
+                <span>我的优惠券</span>
+            </div>
+            <a href="" class="coupon_right"><img src="img/fanhui.png" alt=""></a>
+        </div>
+        <div class="coupon">
+                <div class="coupon_left">
+                    <img src="img/wodejifen@2x.png" alt="" style="width:0.37rem;height:3.52vh">
+                    <span style="padding-left:0.18rem">我的返利</span>
+                </div>
+                <a  href="" class="coupon_right"><img src="img/fanhui.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="mine_footer">
+            <div class="coupon">
+                    <div class="coupon_left">
+                        <img src="img/shouhuodizhi@2x.png" alt="" style="width:0.4rem;height:3.52vh">
+                        <span style="padding-left:0.18rem">收货地址</span>
+                    </div>
+                    <a href="receiveAdress.html" class="coupon_right"><img src="img/fanhui.png" alt=""></a>
+            </div>
+            <div class="coupon">
+                    <div class="coupon_left">
+                        <img src="img/jiamengwomen@2x.png" alt="" style="width:0.4rem;height:3.37vh">
+                        <span style="padding-left:0.18rem">加入我们</span>
+                    </div>
+                    <a href="" class="coupon_right"><img src="img/fanhui.png" alt=""></a>
+            </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+            <div>
+                <img src="img/shouyexuanzhong@2x.png" alt="" class="color">
+                <img src="img/shouyeweixuanzhong@2x.png" alt="" class="none gray">
+                <span class="green">首页</span>
+            </div>
+            <div>
+                <img src="img/gouwuchexuanze@2x.png" alt=""  class="none color">
+                <img src="img/gouwucheweixuanze@2x.png" alt="" class="gray">
+                <span>购物车</span>
+            </div>
+            <div>
+                <img src="img/wodeyixuan@2x.png" alt=""  class="none color">
+                <img src="img/wodeweixuan@2x.png" alt="" class="gray">
+                <span>我的</span>
+            </div>
+    </div>
+    
+
+    <script>document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"</script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+                // 底部栏点击
+                $(".footer>div").click(function(){
+              $(this).find("span").addClass("green");
+              $(this).find(".color").show();
+              $(this).find(".gray").hide();
+              $(this).siblings().find("span").removeClass("green");
+              $(this).siblings().find(".gray").show();
+              $(this).siblings().find(".color").hide();
+          })
+    </script>
+</body>
+</html>

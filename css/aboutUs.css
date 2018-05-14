@@ -1,0 +1,133 @@
+html,body{
+    background-color: #f8f8f8;
+}
+/* 顶部 */
+.about_header{
+    width: 7.5rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    text-align: center;
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.38rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f8f8;
+}
+.about_header a{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: 0.25rem;
+    top: 1.159vh;
+}
+.about_header img{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: -0.01rem;
+    top: 0;
+}
+.banner{
+    text-align: center;
+    width: 4rem;
+    height: 13vh;
+    line-height: 13vh;
+    border-bottom:0.075vh solid #ddd;
+    margin: auto;
+}
+.banner img{
+    width: 2.81rem;
+    height: 9.45vh;
+}
+.us_con{
+    padding:2.54vh 0.34rem;
+}
+.us_con p{
+    text-indent: 2em;
+    font-family: "微软雅黑";
+    font-size: 0.28rem;
+    color: #060101;
+    line-height: 3.5vh;
+}
+.about_con{
+    width: 7.5rem;
+    height: 58vh;
+}
+.details{
+    width: 7.03rem;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0.01rem 0.01rem 0.3rem #f1f1f1;
+    border-radius: 0.08rem;
+    margin-bottom: 19vh;
+}
+.details .adress{
+    width: 7.03rem;
+    height: 6.9vh;
+    line-height: 6.9vh;
+    border-bottom: 0.075vh solid #ddd;
+}
+.details .contact{
+    width: 7.03rem;
+    height: 6.9vh;
+    line-height: 6.9vh;
+    border-bottom: 0.075vh solid #ddd;
+}
+.details .email{
+    width: 7.03rem;
+    height: 6.9vh;
+    line-height: 6.9vh;
+}
+.details .img{
+    float: left;
+    width: 0.61rem;
+    height: 6.9vh;
+    line-height: 6.9vh;
+    text-align: center;
+}
+.adress .img img{
+    width: 0.31rem;
+    height: 2.7vh;
+}
+.contact .img img{
+    width: 0.31rem;
+    height: 2.7vh;
+}
+.email .img img{
+    width: 0.31rem;
+    height: 2.4vh;
+}
+.details p{
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.details p em{
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #666;
+}
+/* 分享 */
+.footer{
+    width: 7.5rem;
+    height: 18.6vh;
+    background-color: #f8f8f8;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.footer .share{
+    width: 6.17rem;
+    height: 6.44vh;
+    background-color: #57c340;
+    text-align: center;
+    line-height: 6.44vh;
+    color: #fff;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    margin: auto;
+    border-radius: 0.6rem;
+    box-shadow: 0.01rem 0.01rem 0.3rem #57c340;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/receiveAdress.css">
+</head>
+<body>
+    <!-- 收货的顶部 -->
+    <div class="receive_header">
+        <a href="mine.html"><img src="img/fanhui (2).png" alt=""></a>
+        <span>收货地址</span>
+    </div>
+    <!-- 解决顶部高度 -->
+    <div class="header_height" style="height:6.44vh;width:7.5rem"></div>
+
+    <div class="receive_con">
+    <!-- 收货地址 -->
+        <div class="adress">
+            <div class="adress_top">
+                <div class="top_left"><img src="img/geren@2x.png" alt=""></div>
+                <div class="top_right">
+                    <p><i>小八</i> <em>15195761703</em></p>
+                    <div class="adress_details even-ellipsis">
+                        江苏省南京市江宁区天元西路52号南京点石电子商务集团有限公司2楼
+                    </div>
+                </div>
+            </div>
+            <div class="adress_bottom">
+                <div class="bottom_right">
+                    <a href="addAdress.html"><img src="img/bianji@2x.png" alt="">编辑</a>
+                    <a href="#" id="delate"><img src="img/shanchu@2x.png" alt="">删除</a>
+                </div>
+                <div class="bottom_left">
+                    <img src="img/morendizhi@2x.png" alt="" class="first">
+                    <img src="img/sheweimorendizhi@2x.png" alt="" class="none second">
+                    <span>默认地址</span>
+                </div>
+            </div>
+        </div>
+    <!-- 收货地址 -->
+        <div class="adress">
+                <div class="adress_top">
+                    <div class="top_left"><img src="img/geren@2x.png" alt=""></div>
+                    <div class="top_right">
+                        <p><i>肥小八</i> <em>15195761703</em></p>
+                        <div class="adress_details even-ellipsis">
+                            江苏省南京市江宁区天元西路52号南京点石电子商务集团有限公司2楼
+                        </div>
+                    </div>
+                </div>
+                <div class="adress_bottom">
+                    <div class="bottom_right">
+                        <a href="addAdress.html"><img src="img/bianji@2x.png" alt="">编辑</a>
+                        <a href="#" id="delate"><img src="img/shanchu@2x.png" alt="">删除</a>
+                    </div>
+                    <div class="bottom_left">
+                        <img src="img/morendizhi@2x.png" alt="" class="first">
+                        <img src="img/sheweimorendizhi@2x.png" alt="" class="none second">
+                        <span>默认地址</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+    <!-- 新增地址 -->
+    <a href="addAdress.html" class="add_adress">
+        新增地址
+    </a>
+
+    <script>document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"</script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        // 点击默认地址
+        $adress=$(".adress");
+        $adress.each(function(){
+            var $bottomLeft=$(this).find(".bottom_left")
+            var $img=$bottomLeft.find("img")
+            $img.click(function(){
+                $(this).hide();
+                var $siblings=$(this).siblings("img")
+                $siblings.show();
+                var $ad=$(this).parents(".adress")
+                var $ads=$ad.siblings(".adress");
+                // console.log($ads);
+                var $first=$ads.find(".first");
+                var $second=$ads.find(".second")
+                // console.log($second);
+                $first.show();
+                $second.hide();
+            })
+
+            // 点击删除 删除该地址信息
+            var $delate=$(this).find("#delate");
+            $delate.click(function(){
+                $br=$(this).parent();
+                $ab=$br.parent();
+                $parent=$ab.parent();
+                $parent.hide();
+            })
+
+        })
+
+
+    </script>
+</body>
+</html>

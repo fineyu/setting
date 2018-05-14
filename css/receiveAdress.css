@@ -1,0 +1,154 @@
+/* 顶部 */
+html,body{
+    background-color: #f8f8f8;    
+}
+.receive_header{
+    width: 7.5rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    text-align: center;
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.38rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f8f8;
+}
+.receive_header a{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: 0.25rem;
+    top: 1.159vh;
+}
+.receive_header img{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: -0.01rem;
+    top: 0;
+}
+/* 收货地址 */
+.adress{
+    width: 7.05rem;
+    /* height: 17.54vh; */
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0.08rem;
+    box-shadow: 0.01rem 0.01rem 0.05rem #efefef;
+    margin-bottom: 0.75vh;
+}
+.adress_top{
+    width: 7.05rem;
+    height: 12.44vh;
+    border-bottom:0.075vh solid #eee;
+}
+.top_left{
+    width: 0.61rem;
+    height: 12.44vh;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.top_right{
+    width: 6.44rem;
+    height: 12.44vh;
+    float: left;
+}
+.top_left img{
+    width: 0.33rem;
+    height: 3vh;
+    position: absolute;
+    top: 3.29vh;
+    right: 0.14rem;
+}
+.top_right p{
+    width: 6.44rem;
+    height: 5.17vh;
+    line-height: 5.17vh;
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.top_right i{
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.top_right em{
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+    padding-left:0.5rem;
+}
+.adress_details{
+    width: 6.44rem;
+    height: 6.6vh;
+}
+.adress_bottom{
+    height: 5.54vh;
+    line-height: 5.54vh;
+    width: 6.69rem;
+    padding: 0 0.18rem;
+}
+.bottom_right{
+    float:right;
+}
+.bottom_left{
+    float: left;
+}
+.bottom_left img{
+    width: 0.3rem;
+    height: 2.24vh;
+}
+.bottom_left a{
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #060101;
+}
+.bottom_right  a:nth-child(1) img{
+    width: 0.39rem;
+    height: 2.17vh;
+    margin-right: 0.1rem;
+}
+.bottom_right a:nth-child(2) img{
+    width: 0.28rem;
+    height: 2.47vh;
+    margin-right: 0.1rem;
+}
+.bottom_right a{
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #060101;
+    float: left;
+}
+.bottom_right a:nth-child(1){
+    margin-right: 0.58rem;
+}
+/* 消失 */
+.none{
+    display: none;
+}
+/* 新增地址 */
+.add_adress{
+    width: 5.81rem;
+    height: 6.5vh;
+    line-height: 6.5vh;
+    background-color: #57c340;
+    color: #fff;
+    font-family: "Simhei";
+    font-size: 0.38rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: auto;
+    box-shadow: 0.01rem 0.01rem 0.3rem #57c340;
+    position: fixed;
+    bottom:2.84vh;
+    left: 0.845rem;
+}
+.receive_con{
+    width: 7.5rem;
+    height: 81vh;
+    overflow: auto;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/setting.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="set_header">
+        <a href="mine.html"><img src="img/fanhui (2).png" alt=""></a>
+        <span>设置</span>
+    </div>
+    <div class="header_height" style="height:6.44vh;width:7.5rem"></div>
+    <div class="set_top">
+        <!-- 我的头像 -->
+        <div class="my_header">
+            <span>我的头像</span>
+            <div class="header"><img src="img/shezhitouxiang@2x.png" alt=""></div>
+        </div>
+        <!-- 修改昵称 -->
+        <div class="change_name">
+            <span>修改昵称</span>
+            <div class="name">
+                <span>肥小八</span>
+                <img src="img/fanhui.png" alt="" id="changeName">
+            </div>
+        </div>
+        <!-- 个性签名 -->
+        <div class="signature">
+            <span>个性签名</span>
+            <img src="img/fanhui.png" alt="" id="changePerson">
+            <span class="odd-ellipsis per_con">快为自己设置一个独一无二的签名快为自己设置一个独一无二的签名</span>
+        </div>
+    </div>
+
+    <div class="set_bottom">
+        <!-- 修改密码 -->
+        <div class="change_passwords">
+            <span>修改密码</span>
+            <div class="password">
+                <a href="changePassword.html"><img src="img/fanhui.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 绑定手机号 -->
+        <div class="bind_phone">
+            <span>绑定手机号</span>
+            <div class="phone">
+                <a href="changePhone.html"><img src="img/fanhui.png" alt=""></a>
+                <span class="number">15195761703</span>
+            </div>
+        </div>
+        <!-- 清理缓存 -->
+        <div class="clear_cache">
+            <span>清理缓存</span>
+            <div class="clear">
+                <img src="img/fanhui.png" alt="">
+            </div>
+        </div>
+        <!-- 关于我们 -->
+        <div class="about_us">
+            <span>关于我们</span>
+            <div class="us">
+                <a href="aboutUs.html"><img src="img/fanhui.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="log_out">
+        退出登录
+    </div>
+    <!-- 遮罩层 -->
+    <div id="mask" class="mask"></div>
+     
+    <!-- 头像弹出框 -->
+    <div class="pop_header none pop">
+        <div class="picture">
+            <p class="take">拍照</p>
+            <p class="phone_photo">从手机相册选择</p>
+        </div>
+        <div class="header_sure">确认</div>
+    </div>
+    <!-- 清理缓存弹出框 -->
+    <div class="pop_clear none pop">
+        <div class="clear_now">当前缓存为1M,是否确认清楚</div>
+        <div class="clear_choose">
+            <span class="off">取消</span>
+            <span id="clear">清除</span>
+        </div>
+    </div>
+    <!-- 修改昵称弹出框 -->
+    <div class="pop_name none pop">
+        <div class="pn_header"><span>修改昵称</span><img src="img/quxiao@2x.png" alt="" id="delate"></div>
+        <input type="text" placeholder="请填写1-8个字符" maxlength="8">
+        <p>确认</p>
+    </div>
+    <!-- 修改个签弹出框 -->
+    <div class="pop_person none pop">
+        <div class="pp_header"><span>修改个签</span><img src="img/quxiao@2x.png" alt="" id="perDelate"></div>
+        <input type="text" placeholder="请填写1-24个字符" maxlength="8">
+        <p>确认</p>
+    </div>
+
+    <script>document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"</script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        var phone=$(".number").text();
+        var mphone=phone.substr(0,3)+'****'+phone.substr(7);
+        $(".number").text(mphone)
+
+        //显示遮罩层
+        function showMask(){     
+            $("#mask").css("height",$(document).height());     
+            $("#mask").css("width",$(document).width());     
+            $("#mask").show();     
+        }  
+        //隐藏遮罩层  
+        function hideMask(){     
+            $("#mask").hide();     
+        }  
+        $("#mask").click(function(){
+            hideMask();
+            $(".pop").hide();
+        })
+        // 点击头像换头像
+        $(".header").click(function(){
+            showMask();
+            $(".pop_header").show();
+        })
+        $(".header_sure").click(function(){
+            hideMask();
+            $(".pop_header").hide();
+        })
+        // 清理缓存
+        $(".clear").click(function(){
+            showMask();
+            $(".pop_clear").show();
+        })
+        $(".off").click(function(){
+            hideMask();
+            $(".pop_clear").hide();
+        })
+        $("#clear").click(function(){
+            hideMask();
+            $(".pop_clear").hide();
+        })
+        // 点击修改昵称弹出框
+        $("#changeName").click(function(){
+            showMask();
+            $(".pop_name").show();
+        })    
+        $("#delate").click(function(){
+            $(".pop_name").hide();    
+            hideMask();
+        })
+        $(".pop_name>p").click(function(){
+            $(".pop_name").hide();
+            hideMask();
+            var name=$(".pop_name>input").val();
+            $(".pop_name>input").val("");
+            $(".name>span").text(name)
+        })
+       
+        // 点击修改个签弹出框
+        $("#changePerson").click(function(){
+            showMask();
+            $(".pop_person").show();
+        })    
+        $("#perDelate").click(function(){
+            $(".pop_person").hide();    
+            hideMask();
+        })
+        $(".pop_person>p").click(function(){
+            $(".pop_person").hide();
+            hideMask();
+            var person=$(".pop_person>input").val();
+            $(".pop_person>input").val(" ");
+            $(".per_con").text(person)
+        })
+
+    </script>
+</body>
+</html>

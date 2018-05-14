@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="about_header">
+        <a href="setting.html"><img src="img/fanhui (2).png" alt=""></a>
+        <span>关于我们</span>
+    </div>
+    <!-- 解决顶部高度 -->
+    <div class="header_height" style="height:6.44vh;width:7.5rem"></div>
+    <!-- logo -->
+    <div class="banner">
+        <img src="img/qianmudashulogo@2x.png" alt="">
+    </div>
+
+    <div class="about_con">
+        <!-- 关于我们 -->
+        <div class="us_con">
+            <p>
+                千亩大叔是江苏点石电子商务集团有限公司自主开发的集农产品交易网站和线下体验店为一体的O2O电子商务平台。整合来自全国各地区的农产品、农特产品，经过标准化品牌化运作，吸引更多的消费者驻足，产生交易。
+                陆续增加了红豆、黑米、小米、黑豆、等杂粮产品，网店销量在不断增加。千亩大叔是江苏点石电子商务集团有限公司自主开发的集农产品交易网站和线下体验店为一体的O2O电子商务平台。整合来自全国各地区的农产品、农特产品，经过标准化品牌化运作，吸引更多的消费者驻足，产生交易。陆续增加了红豆、黑米、小米、黑豆、等杂粮产品，网店销量在不断增加。千亩大叔是江苏点石电子商务集团有限公司自主开发的集农产品交易网站和线下体验店为一体的O2O电子商务平台。整合来自全国各地区的农产品、农特产品，经过标准化品牌化运作，吸引更多的消费者驻足，产生交易。陆续增加了红豆、黑米、小米、黑豆、等杂粮产品，网店销量在不断增加。 
+            </p>
+        </div>
+        <!-- 信息 -->
+        <div class="details">
+            <div class="adress">
+                <div class="img">
+                    <img src="img/dizhi@2x.png" alt="">
+                </div>
+                <p>所在地址:<em>江苏省南京市江宁区天元西路52号</em></p>
+            </div>
+            <div class="contact">
+                <div class="img">
+                    <img src="img/shouji@2x.png" alt="">
+                </div>
+                <p>联系方式:<em>400-187-2008</em></p>
+            </div>
+            <div class="email">
+                <div class="img">
+                    <img src="img/youxiang@2x.png" alt="">
+                </div>
+                <p>联系邮箱:<em>460872173@qq.com</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 分享 -->
+    <div class="footer">
+        <div class="share">分享我们</div>
+    </div>
+    <div class="footer_height"></div>
+
+    <script>document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"</script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".us_con>p").each(function(){
+                var maxwidth=230;//设置最多显示的字数
+                var text=$(this).text();
+                if($(this).text().length>maxwidth){
+                    $(this).text($(this).text().substring(0,maxwidth));
+                    $(this).html($(this).html()+"..."+"<a href='###' style='color:#999'>点击展开</a>");//如果字数超过最大字数，超出部分用...代替，并且在后面加上点击展开的链接；
+    
+                };
+                $(this).find("a").click(function(){
+                    $(this).parent().text(text);//点击“点击展开”，展开全文
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

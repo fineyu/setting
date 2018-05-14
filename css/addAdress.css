@@ -1,0 +1,150 @@
+html,body{
+    background-color: #f8f8f8;
+}
+.add_header{
+    width: 7.5rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    text-align: center;
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.38rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f8f8;
+}
+.add_header a{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: 0.25rem;
+    top: 1.159vh;
+}
+.add_header img{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: -0.01rem;
+    top: 0;
+}
+.save{
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.3rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.3vh;
+}
+/* 内容 */
+.name{
+    width: 6.72rem;
+    height: 6.37vh;
+    line-height: 6.37vh;
+    background-color: #fff;
+    border-bottom: 0.075vh solid #eee;
+    margin: auto;
+    padding: 0 0.19rem;
+}
+.name span{
+    display: block;
+    float: left;
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #060101;
+}
+.name input{
+    width: 80%;
+    height: 6.37vh;
+    line-height: 6.37vh;
+    display: block;
+    float: right;
+    text-align: right;
+    font-family: "Simhei";
+    font-size: 0.26rem;
+    color: #999;
+    border: 0;
+}
+/* 手机号 */
+.phone{
+    width: 6.72rem;
+    height: 6.37vh;
+    line-height: 6.37vh;
+    background-color: #fff;
+    border-bottom: 0.075vh solid #eee;
+    margin: auto;
+    padding: 0 0.19rem;
+}
+.phone span{
+    display: block;
+    float: left;
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #060101;
+}
+.phone input{
+    width: 80%;
+    height: 6.37vh;
+    line-height: 6.37vh;
+    display: block;
+    float: right;
+    text-align: right;
+    font-family: "Simhei";
+    font-size: 0.26rem;
+    color: #999;
+    border: 0;
+}
+/* 地区 */
+.adress{
+    width: 6.72rem;
+    height: 6.37vh;
+    line-height: 6.37vh;
+    background-color: #fff;
+    border-bottom: 0.075vh solid #eee;
+    margin: auto;
+    padding: 0 0.19rem;
+}
+.adress span{
+    display: block;
+    float: left;
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #060101;
+}
+.adress img{
+    width: 0.21rem;
+    height: 2.24vh;
+    float: right;
+    margin-top: 2.065vh;
+}
+/* 详细地址 */
+.details{
+    width: 6.72rem;
+    padding: 2vh 0.19rem 0 0.19rem; 
+    height: 9.9vh;
+    background-color: #fff;
+    margin: auto;
+}
+.details p{
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #060101;
+}
+.details  textarea{
+    width: 6.3rem;
+    padding: 0 0.19rem;
+    height: 5.74vh;
+    border: 0;
+    resize: none;
+    color: #999;
+    font-family: "Simhei";
+    font-size: 0.26rem;
+}
+.adress_con{
+    box-shadow: 0.01rem 0.01rem 0.03rem #f1f1f1;
+}
+
+.info select{ border:0; background:#FFFFFF;text-align: center;color: #999;font-family: "Simhei";font-size: 0.26rem}
+.info{ margin:0 5px; text-align:center;float: right}
+
+

@@ -1,0 +1,474 @@
+/* 顶部 */
+html,body{
+    background-color: #f8f8f8;
+}
+.set_header{
+    width: 7.5rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    text-align: center;
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.38rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f8f8;
+}
+.set_header a{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: 0.25rem;
+    top: 1.159vh;
+}
+.set_header img{
+    width: 0.55rem;
+    height: 4.122vh;
+    position: absolute;
+    left: -0.01rem;
+    top: 0;
+}
+.set_top{
+    width: 7.05rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.08rem;
+    box-shadow: 0.01rem 0.01rem 0.05rem #f1f1f1;
+}
+.my_header{
+    width: 6.59rem;
+    height: 13vh;
+    padding: 0 0.23rem;
+    line-height: 13vh;
+    border-bottom: 0.075vh solid #eee;
+}
+.my_header span{
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.header{
+    width: 1.46rem;
+    height: 10.94vh;
+    border-radius: 50%;
+    float: right;
+    margin-top: 1.03vh;
+}
+.header img{
+    width: 1.46rem;
+    height: 10.94vh;
+    border-radius: 50%;
+    float: right;
+}
+/* 修改昵称 */
+.change_name{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+    border-bottom: 0.075vh solid #eee;
+}
+.change_name span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.name{
+    float: right;
+}
+.name span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #c1c1c1;
+}
+.name img{
+    width: 0.23rem;
+    height: 2.25vh;
+}
+/* 个性签名 */
+.signature{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+    position: relative;
+}
+.signature span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.signature .personal{
+    float: right;
+    margin-right: -1.05rem;
+}
+.signature span:last-child{
+    width: 4.6rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #c1c1c1;
+    display: block;
+    float: right;
+    padding-right: 0.1rem;
+    margin-right: -1rem;
+    text-align: right;
+}
+.signature img{
+    width: 0.23rem;
+    height: 2.25vh;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0.23rem;
+    top: 2.095vh;
+}
+/* 设置下面 */
+.set_bottom{
+    width: 7.05rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.08rem;
+    box-shadow: 0.01rem 0.01rem 0.05rem #f1f1f1;
+    margin-top: 1.05vh;
+}
+/* 修改密码 */
+.change_passwords{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+    border-bottom: 0.075vh solid #eee;
+}
+.change_passwords span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.password{
+    float: right;
+}
+.password a{
+    display: block;
+    float: right;
+    width: 0.23rem;
+    height: 2.25vh;
+    margin-top: 2.095vh;
+}
+.password img{
+    width: 0.23rem;
+    height: 2.25vh;
+    display: block;
+    float: right;
+}
+
+/* 绑定手机号 */
+.bind_phone{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+    border-bottom: 0.075vh solid #eee;
+}
+.bind_phone span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.phone{
+    float: right;
+}
+.phone a{
+    display: block;
+    float: right;
+    width: 0.23rem;
+    height: 2.25vh;
+    margin-top: 2.095vh;
+}
+.phone img{
+    width: 0.23rem;
+    height: 2.25vh;
+    display: block;
+    float: right;
+}
+.phone span:last-child{
+    width: 1.45rem;
+    height: 6.44vh;
+    line-height: 6.44vh;
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #c1c1c1;
+    display: block;
+    float: right;
+    padding-right: 0.2rem;
+}
+/* 清理缓存 */
+.clear_cache{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+    border-bottom: 0.075vh solid #eee;
+}
+.clear_cache span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.clear{
+    float: right;
+}
+
+.clear img{
+    width: 0.23rem;
+    height: 2.25vh;
+    display: block;
+    float: right;
+    margin-top: 2.095vh;
+}
+/* 关于我们 */
+.about_us{
+    width: 6.59rem;
+    height: 6.44vh;
+    padding: 0 0.23rem;
+    line-height: 6.44vh;
+}
+.about_us span:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.32rem;
+    color: #060101;
+}
+.us{
+    float: right;
+}
+.us a{
+    display: block;
+    float: right;
+    width: 0.23rem;
+    height: 2.25vh;
+    margin-top: 2.095vh;
+}
+.us img{
+    width: 0.23rem;
+    height: 2.25vh;
+    display: block;
+    float: right;
+}
+/* 退出登录 */
+.log_out{
+    width: 5.81rem;
+    height: 6.5vh;
+    line-height: 6.5vh;
+    background-color: #57c340;
+    color: #fff;
+    font-family: "Simhei";
+    font-size: 0.38rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 10.8vh;
+    box-shadow: 0.01rem 0.01rem 0.3rem #57c340;
+}
+/* 遮罩层 */
+.mask {       
+    position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;     
+    z-index: 1002; left: 0px;     
+    opacity:0.5; -moz-opacity:0.5;     
+}
+/* 弹出框 */
+.pop_header{
+    width: 6.79rem;
+    position: fixed;
+    z-index: 1002;
+    bottom: 1.5vh;
+    right: 0.37rem;
+}
+.picture{
+    width: 6.79rem;
+    background-color: #fff;
+}
+.picture p:nth-child(1){
+    width: 6.79rem;
+    height: 8.7vh;
+    background-color: #fff;
+    text-align: center;
+    line-height: 8.7vh;
+    border-bottom: 0.075vh solid #eee;
+    color:#57c340; 
+}
+.picture p:nth-child(2){
+    width: 6.79rem;
+    height: 8.7vh;
+    background-color: #fff;
+    text-align: center;
+    line-height: 8.7vh;
+    color:#57c340; 
+}
+.header_sure{
+    width: 6.79rem;
+    height: 6.6vh;
+    background-color: #fff;
+    text-align: center;
+    line-height: 6.6vh;
+    border-bottom: 0.075vh solid #eee;
+    color:#57c340; 
+    margin-top: 1.124vh;
+}
+.none{
+    display: none;
+}
+/* 清除缓存 */
+.pop_clear{
+    position: fixed;
+    right: 0.34rem;
+    bottom: 44.3vh;
+    z-index: 1002;
+    background-color: #fff;
+}
+.clear_now{
+    width: 6.73rem;
+    height: 7.34vh;
+    line-height: 7.34vh;
+    border-bottom: 0.075vh solid #eee;
+    color: #060101;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    text-align: center;
+}
+.clear_choose{
+    width: 6.73rem;
+    height:7.34vh;
+}
+.clear_choose span{
+    display: block;
+    width: 3.35rem;
+    height: 7.34vh;
+    line-height: 7.34vh;
+    text-align: center;
+    color: #57c340;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    float: left;
+    text-align: center;
+}
+.clear_choose span:nth-child(1){
+    border-right: 0.01rem solid #eee;
+}
+.pop{
+    border-radius: 0.08rem;
+}
+/* 修改昵称 */
+.pop_name{
+    width: 6.29rem;
+    height: 26.5vh;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0.08rem;
+    padding: 0 0.23rem;
+    position: fixed;
+    z-index: 1002;
+    right: 0.46rem;
+    top: 30.6vh;
+}
+.pn_header{
+    height: 6.6vh;
+    line-height: 6.6vh;
+    text-align: center;
+    width: 6.29rem;
+    border-top-right-radius: 0.08rem;
+    border-top-left-radius: 0.08rem;
+}
+.pn_header span{
+    font-family: "Simhei";
+    font-size: 0.34rem;
+    color: #060101;
+}
+.pn_header img{
+    width: 0.41rem;
+    height: 3vh;
+    line-height: 3vh;
+    float: right;
+    margin-top: 1.8vh;
+}
+.pop_name input{
+    width: 6.05rem;
+    height: 8.34vh;
+    font-family: "Simhei";
+    color:#ddd;
+    font-size: 0.22rem;
+    border: 0;
+    border: 0.01rem solid #ddd;
+    border-radius: 0.08rem;
+    padding: 1vh 0.13rem;
+}
+.pop_name p{
+    width: 2.12rem;
+    height: 5.24vh;
+    line-height: 5.24vh;
+    color:#57c340;
+    border:0.01rem solid #57c340;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: #fff;
+    margin:auto;
+    margin-top: 2.4vh;
+}
+/* 修改个签 */
+.pop_person{
+    width: 6.29rem;
+    height: 26.5vh;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0.08rem;
+    padding: 0 0.23rem;
+    position: fixed;
+    z-index: 1002;
+    right: 0.46rem;
+    top: 30.6vh;
+}
+.pp_header{
+    height: 6.6vh;
+    line-height: 6.6vh;
+    text-align: center;
+    width: 6.29rem;
+    border-top-right-radius: 0.08rem;
+    border-top-left-radius: 0.08rem;
+}
+.pp_header span{
+    font-family: "Simhei";
+    font-size: 0.34rem;
+    color: #060101;
+}
+.pp_header img{
+    width: 0.41rem;
+    height: 3vh;
+    line-height: 3vh;
+    float: right;
+    margin-top: 1.8vh;
+}
+.pop_person input{
+    width: 6.05rem;
+    height: 8.34vh;
+    font-family: "Simhei";
+    color:#666;
+    font-size: 0.22rem;
+    border: 0;
+    border: 0.01rem solid #ddd;
+    border-radius: 0.08rem;
+    padding: 1vh 0.13rem;
+}
+.pop_person p{
+    width: 2.12rem;
+    height: 5.24vh;
+    line-height: 5.24vh;
+    color:#57c340;
+    border:0.01rem solid #57c340;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: #fff;
+    margin:auto;
+    margin-top: 2.4vh;
+}
+
